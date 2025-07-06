@@ -1,0 +1,20 @@
+# Arduino build
+*.ino.cpp
+*.elf
+*.bin
+*.hex
+*.map
+*.d
+__pycache__/
+*.pyc
+
+# PlatformIO
+.pio/
+.vscode/
+build/
+
+# Backup files
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
