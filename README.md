@@ -53,6 +53,23 @@ Watch the full project demonstration on YouTube:
 | LightControlTask      | 3        | Controls LED based on light/button   |
 | LCD TimerCallback     | -        | Updates OLED display every 2s        |
 
+## 📚 Required Libraries
+
+To run this project successfully on ESP32 using Arduino IDE, please install the following libraries:
+
+| Library Name                | Install From                    | Notes                                              |
+|----------------------------|----------------------------------|----------------------------------------------------|
+| **Adafruit SSD1306**       | Library Manager                  | OLED 128x64 display driver                         |
+| **Adafruit GFX Library**   | Library Manager                  | Core graphics library for Adafruit displays        |
+| **DHT sensor library**     | Library Manager (by Adafruit)    | Reads temperature & humidity from DHT22            |
+| **Adafruit Unified Sensor**| Library Manager                  | Required by DHT sensor library                     |
+| **Wire**                   | Built-in with Arduino IDE        | I2C communication                                  |
+| **FreeRTOS (ESP32 Core)**  | Built-in with ESP32 board core   | For multitasking (FreeRTOS is built-in)            |
+| **Buzzer** (custom)        | *Custom or implement tone()*     | You can use tone() instead if Buzzer.h is missing  |
+
+> Make sure these libraries are available in your Arduino environment before compiling.
+
+
 ## Getting Started
 1. Open `code/main.ino` in Arduino IDE
 2. Select ESP32 board and install required libraries:
