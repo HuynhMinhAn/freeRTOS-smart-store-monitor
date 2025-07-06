@@ -53,7 +53,7 @@ Watch the full project demonstration on YouTube:
 | LightControlTask      | 3        | Controls LED based on light/button   |
 | LCD TimerCallback     | -        | Updates OLED display every 2s        |
 
-## 📚 Required Libraries
+## Required Libraries
 
 To run this project successfully on ESP32 using Arduino IDE, please install the following libraries:
 
