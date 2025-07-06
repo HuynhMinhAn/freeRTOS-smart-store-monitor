@@ -1,11 +1,11 @@
-# 🏪 FreeRTOS Smart Store Monitor
+# FreeRTOS Smart Store Monitor
 
 This project implements a real-time smart store monitoring system using ESP32 and FreeRTOS. It tracks customer entry/exit, measures temperature and humidity, and provides fire alerts with OLED display and buzzer support.
 
-## 👤 Author
+## Author
 **Huynh Minh An**
 
-## 🚀 Features
+## Features
 - Dual ultrasonic sensors to count people entering and leaving
 - DHT22 sensor to monitor temperature and humidity
 - OLED screen displays:
@@ -16,7 +16,7 @@ This project implements a real-time smart store monitoring system using ESP32 an
 - Fire alert with buzzer and LED
 - Uses FreeRTOS: 5 tasks + 1 software timer + semaphore for alarm handling
 
-## 🧰 Hardware
+## Hardware
 | Device       | Quantity |
 |--------------|----------|
 | ESP32 DevKit | 1        |
@@ -28,13 +28,22 @@ This project implements a real-time smart store monitoring system using ESP32 an
 | Button/Sensor| Optional |
 | Jumper wires | Breadboard, etc. |
 
-## 📷 Wiring Diagram
-![Wiring](docs/wiring_diagram.png)
+## Wiring Diagram
 
-## 📽️ Demo
-![Demo](docs/demo.gif)
+View the complete wiring diagram on Wokwi:  
+🔗 [https://wokwi.com/projects/417785142236832769](https://wokwi.com/projects/417785142236832769)
 
-## 🧵 RTOS Task Overview
+> You can interact with the circuit and simulate it directly in your browser.
+
+
+## Demo
+
+Watch the full project demonstration on YouTube:  
+🔗 [https://www.youtube.com/watch?v=L_Eo5bQP7rU&t=3s](https://www.youtube.com/watch?v=L_Eo5bQP7rU&t=3s)
+
+
+
+## RTOS Task Overview
 | Task                  | Priority | Description                          |
 |-----------------------|----------|--------------------------------------|
 | EntryTask             | 2        | Detects people entering              |
@@ -44,7 +53,7 @@ This project implements a real-time smart store monitoring system using ESP32 an
 | LightControlTask      | 3        | Controls LED based on light/button   |
 | LCD TimerCallback     | -        | Updates OLED display every 2s        |
 
-## 🛠️ Getting Started
+## Getting Started
 1. Open `code/main.ino` in Arduino IDE
 2. Select ESP32 board and install required libraries:
    - Adafruit_SSD1306
